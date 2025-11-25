@@ -1,17 +1,17 @@
 {
-    "name": "@monstermann/NAME",
+    "name": "@monstermann/signals-modal",
     "type": "module",
     "version": "0.0.0",
-    "description": "DESC",
+    "description": "Composable modal management.",
     "author": "Michael Ostermann <michaelostermann@me.com>",
     "license": "MIT",
-    "homepage": "https://MichaelOstermann.github.io/NAME",
+    "homepage": "https://MichaelOstermann.github.io/signals-modal",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/MichaelOstermann/NAME.git"
+        "url": "git+https://github.com/MichaelOstermann/signals-modal.git"
     },
     "bugs": {
-        "url": "https://github.com/MichaelOstermann/NAME/issues"
+        "url": "https://github.com/MichaelOstermann/signals-modal/issues"
     },
     "keywords": [],
     "sideEffects": false,
@@ -31,5 +31,13 @@
         "bundle": "tsdown",
         "release": "bun publish --access public"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@monstermann/fn": "^0.2.0",
+        "@monstermann/signals": "^0.0.0",
+        "@monstermann/signals-web": "^0.0.0"
+    },
+    "devDependencies": {
+        "@monstermann/unplugin-fn": "^0.2.0",
+        "@monstermann/unplugin-signals": "^0.0.0"
+    }
 }
