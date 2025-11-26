@@ -20,12 +20,12 @@
       "version": "0.1.1",
       "dependencies": {
         "@monstermann/fn": "^0.3.1",
-        "@monstermann/signals": "^0.1.0",
+        "@monstermann/signals": "^0.1.1",
         "@monstermann/signals-web": "^0.2.0",
       },
       "devDependencies": {
         "@monstermann/unplugin-fn": "^0.3.1",
-        "@monstermann/unplugin-signals": "^0.1.0",
+        "@monstermann/unplugin-signals": "^0.1.1",
       },
     },
   },
@@ -284,7 +284,7 @@
 
     "@monstermann/set": ["@monstermann/set@0.1.0", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0", "@monstermann/remmi": "^0.0.0" } }, "sha512-Z4bGIh9uun+v72NrFEoxVWlFMXzXU49FXCvWXlAFXR9s4ms0mTLS2YJNNX0NQePS0z/unE2pmhI+s+OefxsEBw=="],
 
-    "@monstermann/signals": ["@monstermann/signals@0.1.0", "", { "dependencies": { "@monstermann/dll": "^0.0.0", "@monstermann/dsp": "^0.2.1", "@monstermann/meta": "^0.1.0" } }, "sha512-j18esP81KQpD+BW+MJgB2Ad/hCqnRQRXcoJ40FrUXoEr0pdBJV48+V/M49JYcxVZedHWzQAJCIWPC8OWGWEouQ=="],
+    "@monstermann/signals": ["@monstermann/signals@0.1.1", "", { "dependencies": { "@monstermann/dll": "^0.0.0", "@monstermann/dsp": "^0.2.1", "@monstermann/meta": "^0.1.0" } }, "sha512-Lk6ozmfudK0jZeGNqny6lOSpQcpMbuAArSxaOmeKYe9j2u3EkDVHZ6YBKWJopz59+JcoM+vwnAeDp1B71lVbdw=="],
 
     "@monstermann/signals-modal": ["@monstermann/signals-modal@workspace:packages/signals-modal"],
 
@@ -300,7 +300,7 @@
 
     "@monstermann/unplugin-fn": ["@monstermann/unplugin-fn@0.3.1", "", { "dependencies": { "@monstermann/transform-match": "^0.2.1", "@monstermann/tree-shake-import-namespaces": "^0.2.0", "unplugin": "^2.3.4", "unplugin-utils": "^0.2.4" } }, "sha512-EoU69+QGAMyQGkrnrKB6y1G7ZaINqJ3HjHs16V7QtLv0aYQcBeIoxKbY+tf4QiregoCT+Kgo2gmIcmj3r/cvnw=="],
 
-    "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.1.0", "", { "dependencies": { "@monstermann/transform-meta": "^0.1.0", "unplugin": "^2.3.4", "unplugin-utils": "^0.2.4" } }, "sha512-m3RAWmOX0Yry3MSeq/ONEvINWogbHXlCe9wFTdEnNKSUGSPTsuWIvElse1GJkzf6E1c0YY9TrvA29l4xL2I7/A=="],
+    "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.1.1", "", { "dependencies": { "@monstermann/transform-meta": "^0.1.0", "unplugin": "^2.3.4", "unplugin-utils": "^0.2.4" } }, "sha512-63nmWNY+lKfhuaZ7n3WJHwNZAt0ago20ZWyICIsnPRA6PYPdxZi8uKNporh9R6/VC7o5zXm2LYkiqw97pDL+xQ=="],
 
     "@monstermann/vitepress-theme": ["@monstermann/vitepress-theme@0.2.0", "", {}, "sha512-/2iV2HTsgGFZffl15XvjaQF+N/2rRiLvW/xc3NtGAKU6g+Rnb9v7Era9OecD7xeu3CwD97vEc1eZrqR/auCB+A=="],
 
@@ -1338,6 +1338,8 @@
 
     "@monstermann/signals/@monstermann/dll": ["@monstermann/dll@0.0.0", "", {}, "sha512-sCpmQRG3N+Jg4i0VkCxFhNLxqMZvacMv2n/QYCacKpip0xy1wEaJLlIXzntNuBrvNf0GnWNIahJqzNTRbO7n1g=="],
 
+    "@monstermann/signals-web/@monstermann/signals": ["@monstermann/signals@0.1.0", "", { "dependencies": { "@monstermann/dll": "^0.0.0", "@monstermann/dsp": "^0.2.1", "@monstermann/meta": "^0.1.0" } }, "sha512-j18esP81KQpD+BW+MJgB2Ad/hCqnRQRXcoJ40FrUXoEr0pdBJV48+V/M49JYcxVZedHWzQAJCIWPC8OWGWEouQ=="],
+
     "@monstermann/transform-match/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.5", "", {}, "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og=="],
 
     "@monstermann/transform-match/magic-string": ["magic-string@0.30.19", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw=="],
@@ -1463,6 +1465,8 @@
     "@babel/traverse/@babel/generator/@jridgewell/gen-mapping": ["@jridgewell/gen-mapping@0.3.8", "", { "dependencies": { "@jridgewell/set-array": "^1.2.1", "@jridgewell/sourcemap-codec": "^1.4.10", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA=="],
 
     "@babel/traverse/@babel/generator/@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.25", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="],
+
+    "@monstermann/signals-web/@monstermann/signals/@monstermann/dll": ["@monstermann/dll@0.0.0", "", {}, "sha512-sCpmQRG3N+Jg4i0VkCxFhNLxqMZvacMv2n/QYCacKpip0xy1wEaJLlIXzntNuBrvNf0GnWNIahJqzNTRbO7n1g=="],
 
     "@monstermann/transform-meta/oxc-parser/@oxc-parser/binding-android-arm64": ["@oxc-parser/binding-android-arm64@0.76.0", "", { "os": "android", "cpu": "arm64" }, "sha512-1XJW/16CDmF5bHE7LAyPPmEEVnxSadDgdJz+xiLqBrmC4lfAeuAfRw3HlOygcPGr+AJsbD4Z5sFJMkwjbSZlQg=="],
 
