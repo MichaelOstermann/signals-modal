@@ -32,12 +32,12 @@
         "release": "bun publish --access public"
     },
     "dependencies": {
-        "@monstermann/fn": "^0.2.0",
-        "@monstermann/signals": "^0.0.0",
-        "@monstermann/signals-web": "^0.0.0"
+        "@monstermann/fn": "^0.3.0",
+        "@monstermann/signals": "^0.1.0",
+        "@monstermann/signals-web": "^0.2.0"
     },
     "devDependencies": {
-        "@monstermann/unplugin-fn": "^0.2.0",
-        "@monstermann/unplugin-signals": "^0.0.0"
+        "@monstermann/unplugin-fn": "^0.3.0",
+        "@monstermann/unplugin-signals": "^0.1.0"
     }
 }
