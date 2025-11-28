@@ -8,6 +8,11 @@ export default defineConfig({
     entry: ["./src/index.ts"],
     format: "esm",
     unbundle: true,
+    external: [
+        /@monstermann\/map/,
+        /@monstermann\/set/,
+        /@monstermann\/geometry/,
+    ],
     plugins: [
         fn({}),
         signals({
