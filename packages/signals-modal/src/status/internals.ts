@@ -10,7 +10,7 @@ import { onModalOpening } from "./onModalOpening"
 export const $keysToStatus = signal<ReadonlyMap<string, Signal<ModalStatus>>>(new Map(), SILENT)
 export const $openedModals = signal<ReadonlySet<string>>(Set.create(), INTERNAL)
 
-onModalOpening(key => $openedModals(m => Set.remove(m, key)))
-onModalOpened(key => $openedModals(m => Set.remove(m, key)))
-onModalClosed(key => $openedModals(m => Set.add(m, key)))
-onModalDisposed(key => $openedModals(m => Set.add(m, key)))
+onModalOpening(key => $openedModals(m => Set.add(m, key)))
+onModalOpened(key => $openedModals(m => Set.add(m, key)))
+onModalClosed(key => $openedModals(m => Set.remove(m, key)))
+onModalDisposed(key => $openedModals(m => Set.remove(m, key)))
