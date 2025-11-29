@@ -76,6 +76,7 @@ export default defineConfig({
                 { link: "getModalStatus", text: "getModalStatus" },
                 { link: "getOpenedModals", text: "getOpenedModals" },
                 { link: "getOpeningModals", text: "getOpeningModals" },
+                { link: "getOpenModals", text: "getOpenModals" },
                 { link: "getVisibleModals", text: "getVisibleModals" },
                 { link: "isAnyModalClosed", text: "isAnyModalClosed" },
                 { link: "isAnyModalClosing", text: "isAnyModalClosing" },
