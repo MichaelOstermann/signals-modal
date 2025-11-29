@@ -4,7 +4,7 @@ import { effect, INTERNAL, signal } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { $floatingElements } from "./internals"
 
-export function withFloatingElement(anchorElement?: HTMLElement): Signal<HTMLElement | null> {
+export function withFloatingElement(anchorElement?: HTMLElement | null): Signal<HTMLElement | null> {
     const modal = currentModal()
     const $anchorElement = signal(anchorElement ?? null, INTERNAL)
 
