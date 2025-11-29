@@ -80,6 +80,7 @@ export default defineConfig({
                 { link: "getVisibleModals", text: "getVisibleModals" },
                 { link: "isAnyModalClosed", text: "isAnyModalClosed" },
                 { link: "isAnyModalClosing", text: "isAnyModalClosing" },
+                { link: "isAnyModalOpen", text: "isAnyModalOpen" },
                 { link: "isAnyModalOpened", text: "isAnyModalOpened" },
                 { link: "isAnyModalOpening", text: "isAnyModalOpening" },
                 { link: "isAnyModalVisible", text: "isAnyModalVisible" },
