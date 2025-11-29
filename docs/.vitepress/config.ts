@@ -86,6 +86,7 @@ export default defineConfig({
                 { link: "isAnyModalVisible", text: "isAnyModalVisible" },
                 { link: "isModalClosed", text: "isModalClosed" },
                 { link: "isModalClosing", text: "isModalClosing" },
+                { link: "isModalOpen", text: "isModalOpen" },
                 { link: "isModalOpened", text: "isModalOpened" },
                 { link: "isModalOpening", text: "isModalOpening" },
                 { link: "isModalVisible", text: "isModalVisible" },
