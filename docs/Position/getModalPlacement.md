@@ -22,7 +22,7 @@ import {
 } from "@monstermann/signals-modal";
 
 createModal("key", () => {
-    const $status = withModalStatus();
+    const { $status } = withModalStatus();
     const $anchorElement = withAnchorElement();
     const $floatingElement = withFloatingElement();
     const $anchorMeasurement = withAnchorMeasurement({

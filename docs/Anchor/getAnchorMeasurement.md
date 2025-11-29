@@ -20,7 +20,7 @@ import {
 } from "@monstermann/signals-modal";
 
 createModal("key", () => {
-    const $status = withModalStatus();
+    const { $status } = withModalStatus();
     const $anchorElement = withAnchorElement();
     // Memo({ top: number, left: number, width: number, height: number })
     const $anchorMeasurement = withAnchorMeasurement({

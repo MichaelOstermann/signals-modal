@@ -22,7 +22,7 @@ syncModalGroupsToBody();
 
 const modal = createModal("key", () => {
     const $groups = withModalGroups(["dialog"]);
-    const $status = withModalStatus();
+    const { $status } = withModalStatus();
     return { $groups, $status };
 });
 

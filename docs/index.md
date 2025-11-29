@@ -20,7 +20,7 @@ aside: true
 
 ```ts
 const modal = createModal("key", () => {
-    const $status = withModalStatus();
+    const { $status } = withModalStatus();
 
     const $anchorElement = withAnchorElement();
     const $anchorMeasurement = withAnchorMeasurement({
