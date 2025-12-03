@@ -65,6 +65,9 @@ export default defineConfig({
                 { link: "getModalPlacement", text: "getModalPlacement" },
                 { link: "getModalPosition", text: "getModalPosition" },
             ] },
+            { base: "/Scroll/", text: "Scroll", items: [
+                { link: "withCloseOnScroll", text: "withCloseOnScroll" },
+            ] },
             { base: "/Status/", text: "Status", items: [
                 { link: "withModalStatus", text: "withModalStatus" },
                 { link: "closeAllModals", text: "closeAllModals" },
