@@ -7,6 +7,7 @@ function createModal(
 ): T & {
     key: string;
     dispose: () => void;
+    isDisposed: () => boolean;
     onDispose: (dispose: MaybeDispose) => void;
 };
 ```

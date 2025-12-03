@@ -1,5 +1,5 @@
 import type { MaybeDispose } from "@monstermann/signals"
-import { context, disposer, emitter, SILENT } from "@monstermann/signals"
+import { context, disposer, emitter, isDisposed, SILENT } from "@monstermann/signals"
 import { closeModal } from "./status/closeModal"
 import { isModalClosed } from "./status/isModalClosed"
 import { onModalClosed } from "./status/onModalClosed"
@@ -7,6 +7,7 @@ import { onModalClosed } from "./status/onModalClosed"
 export interface ModalContext {
     key: string
     dispose: () => void
+    isDisposed: () => boolean
     onDispose: (dispose: MaybeDispose) => void
 }
 
@@ -28,6 +29,7 @@ export function createModal<T extends object>(
     const nextCtx: ModalContext = {
         key,
         onDispose: dispose,
+        isDisposed: () => isDisposed(dispose),
         dispose() {
             if (isModalClosed(key)) {
                 dispose()
