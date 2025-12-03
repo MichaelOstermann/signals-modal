@@ -15,6 +15,7 @@ const $classes = memo(() => {
 
 export function syncModalGroupsToBody(): void {
     effect(() => {
+        if (!$classes()) return
         const classes = $classes().split(" ")
         document.body.classList.add(...classes)
         return () => {
