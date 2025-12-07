@@ -17,7 +17,7 @@
     },
     "packages/signals-modal": {
       "name": "@monstermann/signals-modal",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "dependencies": {
         "@monstermann/fn": "^0.4.0",
         "@monstermann/signals": "^0.1.1",
