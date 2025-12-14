@@ -32,7 +32,7 @@
         "release": "bun publish --access public"
     },
     "dependencies": {
-        "@monstermann/fn": "^0.4.4",
+        "@monstermann/fn": "^0.4.5",
         "@monstermann/signals": "^0.2.0",
         "@monstermann/signals-web": "^0.2.3"
     },
