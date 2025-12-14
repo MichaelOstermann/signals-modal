@@ -1,6 +1,5 @@
 import type { Signal } from "@monstermann/signals"
-import { Map } from "@monstermann/fn"
-import { effect, INTERNAL, signal } from "@monstermann/signals"
+import { INTERNAL, signal } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { $floatingElements } from "./internals"
 
@@ -8,12 +7,13 @@ export function withFloatingElement(anchorElement?: HTMLElement | null): Signal<
     const modal = currentModal()
     const $anchorElement = signal(anchorElement ?? null, INTERNAL)
 
-    modal.onDispose(effect(() => {
-        $floatingElements(map => Map.set(map, modal.key, $anchorElement))
-    }, INTERNAL))
+    $floatingElements(map => map.set(modal.key, $anchorElement))
 
     modal.onDispose(() => {
-        $floatingElements(map => Map.remove(map, modal.key))
+        $floatingElements((map) => {
+            map.delete(modal.key)
+            return map
+        })
     })
 
     return $anchorElement

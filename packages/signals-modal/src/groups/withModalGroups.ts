@@ -1,5 +1,4 @@
 import type { Memo } from "@monstermann/signals"
-import { Map, Set } from "@monstermann/fn"
 import { INTERNAL, memo } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { getGroupsForModal } from "./getGroupsForModal"
@@ -9,16 +8,17 @@ export function withModalGroups(groups: Iterable<string>): Memo<ReadonlySet<stri
     const modal = currentModal()
 
     $keysToGroups((keys) => {
-        return Map.mapOrElse(
-            keys,
-            modal.key,
-            set => Set.addAll(set, groups),
-            map => Map.set(map, modal.key, Set.create(groups)),
-        )
+        if (!keys.has(modal.key)) keys.set(modal.key, new Set())
+        const g = keys.get(modal.key)!
+        for (const group of groups) g.add(group)
+        return keys
     })
 
     modal.onDispose(() => {
-        $keysToGroups(keys => Map.remove(keys, modal.key))
+        $keysToGroups((keys) => {
+            keys.delete(modal.key)
+            return keys
+        })
     })
 
     return memo(() => getGroupsForModal(modal.key), INTERNAL)

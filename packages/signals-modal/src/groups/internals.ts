@@ -1,6 +1,9 @@
-import { INTERNAL, memo, signal, SILENT } from "@monstermann/signals"
+import { INTERNAL, memo, signal } from "@monstermann/signals"
 
-export const $keysToGroups = signal<ReadonlyMap<string, ReadonlySet<string>>>(new Map(), SILENT)
+export const $keysToGroups = signal<Map<string, Set<string>>>(new Map(), {
+    mutable: true,
+    silent: true,
+})
 
 export const $groupsToKeys = memo<ReadonlyMap<string, ReadonlySet<string>>>(() => {
     const map = new Map<string, Set<string>>()

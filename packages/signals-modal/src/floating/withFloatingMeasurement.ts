@@ -1,6 +1,6 @@
 import type { Memo, Reactive } from "@monstermann/signals"
 import type { ModalStatus } from "../status/types"
-import { Map, Rect } from "@monstermann/fn"
+import { Rect } from "@monstermann/fn"
 import { effect, INTERNAL, memo, signal } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { observeDimensions } from "../internals/observeDimensions"
@@ -42,12 +42,13 @@ export function withFloatingMeasurement(options: {
         }))
     }, INTERNAL))
 
-    modal.onDispose(effect(() => {
-        $floatingMeasurements(map => Map.set(map, modal.key, $rect()))
-    }, INTERNAL))
+    $floatingMeasurements(map => map.set(modal.key, $rect))
 
     modal.onDispose(() => {
-        $floatingMeasurements(map => Map.remove(map, modal.key))
+        $floatingMeasurements((map) => {
+            map.delete(modal.key)
+            return map
+        })
     })
 
     return $measurement

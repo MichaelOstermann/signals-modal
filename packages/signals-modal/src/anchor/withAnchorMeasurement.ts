@@ -1,6 +1,6 @@
 import type { Memo, Reactive } from "@monstermann/signals"
 import type { ModalStatus } from "../status/types"
-import { Map, Rect } from "@monstermann/fn"
+import { Rect } from "@monstermann/fn"
 import { effect, INTERNAL, memo, signal } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { observePosition } from "../internals/observePosition"
@@ -31,12 +31,13 @@ export function withAnchorMeasurement(options: {
         return observePosition(element, bounds => $rect(Rect.fromDOMRect(bounds)))
     }, INTERNAL))
 
-    modal.onDispose(effect(() => {
-        $anchorMeasurements(map => Map.set(map, modal.key, $rect()))
-    }, INTERNAL))
+    $anchorMeasurements(map => map.set(modal.key, $rect))
 
     modal.onDispose(() => {
-        $anchorMeasurements(map => Map.remove(map, modal.key))
+        $anchorMeasurements((map) => {
+            map.delete(modal.key)
+            return map
+        })
     })
 
     return $measurement

@@ -1,7 +1,7 @@
 import type { Memo } from "@monstermann/signals"
 import type { ModalPlacement } from "./withPlacement"
-import { Map, pipe, Rect } from "@monstermann/fn"
-import { effect, INTERNAL, memo } from "@monstermann/signals"
+import { pipe, Rect } from "@monstermann/fn"
+import { INTERNAL, memo } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { roundByDPR } from "../internals/roundByDPR"
 import { $positions, getBoundaryDown, getBoundaryLeft, getBoundaryRight, getBoundaryUp } from "./internals"
@@ -299,12 +299,13 @@ export function withPosition(options: {
         })
     }, INTERNAL)
 
-    modal.onDispose(effect(() => {
-        $positions(p => Map.set(p, modal.key, $position()))
-    }, INTERNAL))
+    $positions(p => p.set(modal.key, $position))
 
     modal.onDispose(() => {
-        $positions(p => Map.remove(p, modal.key))
+        $positions((p) => {
+            p.delete(modal.key)
+            return p
+        })
     })
 
     return $position

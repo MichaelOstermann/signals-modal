@@ -1,6 +1,5 @@
 import type { Memo, Signal } from "@monstermann/signals"
 import type { ModalStatus } from "./types"
-import { Map } from "@monstermann/fn"
 import { INTERNAL, memo, signal, watch } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { closeModal } from "./closeModal"
@@ -21,8 +20,11 @@ export function withModalStatus(status: ModalStatus = "closed"): {
     const modal = currentModal()
     const $status = signal<ModalStatus>(status, INTERNAL)
 
-    $keysToStatus(keys => Map.set(keys, modal.key, $status))
-    modal.onDispose(() => $keysToStatus(keys => Map.remove(keys, modal.key)))
+    $keysToStatus(keys => keys.set(modal.key, $status))
+    modal.onDispose(() => $keysToStatus((keys) => {
+        keys.delete(modal.key)
+        return keys
+    }))
 
     modal.onDispose(watch($status, (status) => {
         if (status === "closed") onModalClosed(modal.key)
