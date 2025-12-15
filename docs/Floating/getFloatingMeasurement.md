@@ -6,7 +6,7 @@
 function getFloatingMeasurement(key: string): Rect;
 ```
 
-Retrieves the current result of [`withFloatingMeasurement`](./withFloatingMeasurement) or [`withMouseFloating`](./withMouseFloating), falling back to an empty `Rect`.
+Retrieves the current result of [`withFloatingMeasurement`](./withFloatingMeasurement), falling back to an empty `Rect`.
 
 ## Example
 
