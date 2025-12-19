@@ -1,7 +1,7 @@
 {
     "name": "@monstermann/signals-modal",
     "type": "module",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "Composable modal management.",
     "author": "Michael Ostermann <michaelostermann@me.com>",
     "license": "MIT",
