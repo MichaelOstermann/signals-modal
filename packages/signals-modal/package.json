@@ -33,11 +33,11 @@
     },
     "dependencies": {
         "@monstermann/fn": "^0.4.5",
-        "@monstermann/signals": "^0.2.0",
-        "@monstermann/signals-web": "^0.2.3"
+        "@monstermann/signals": "^0.2.1",
+        "@monstermann/signals-web": "^0.2.4"
     },
     "devDependencies": {
-        "@monstermann/unplugin-fn": "^0.4.4",
-        "@monstermann/unplugin-signals": "^0.2.0"
+        "@monstermann/unplugin-fn": "^0.4.5",
+        "@monstermann/unplugin-signals": "^0.2.1"
     }
 }

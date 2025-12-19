@@ -20,12 +20,12 @@
       "version": "0.4.1",
       "dependencies": {
         "@monstermann/fn": "^0.4.5",
-        "@monstermann/signals": "^0.2.0",
-        "@monstermann/signals-web": "^0.2.3",
+        "@monstermann/signals": "^0.2.1",
+        "@monstermann/signals-web": "^0.2.4",
       },
       "devDependencies": {
-        "@monstermann/unplugin-fn": "^0.4.4",
-        "@monstermann/unplugin-signals": "^0.2.0",
+        "@monstermann/unplugin-fn": "^0.4.5",
+        "@monstermann/unplugin-signals": "^0.2.1",
       },
     },
   },
@@ -276,7 +276,7 @@
 
     "@monstermann/match": ["@monstermann/match@0.2.7", "", { "dependencies": { "type-fest": "^5.0.0" } }, "sha512-ucsGSJUHgKrpyfv/+Ccipo/3t37vWDwzEnMu3WUkHVJyS9w/5hOmL1r8KgNpW8dHOYeRM4Ly1dZQyAFkxRzUdA=="],
 
-    "@monstermann/meta": ["@monstermann/meta@0.1.2", "", {}, "sha512-SSiY/lWEt2wBJEDwUNg9ev8gpy3dVByXavMfC9JYxcNQ2uXpoMzIir5sUGH9Pb8+3zaXrwaliW1zavklSGBtFQ=="],
+    "@monstermann/meta": ["@monstermann/meta@0.2.0", "", {}, "sha512-TR65nXC3wVz/78ySorX27mvtQtYw7Q4T3jUH1VJD+Qbmin1V/K3+0OrC9zgU1h+KvqNb/M04vzGJP16PHsMPfQ=="],
 
     "@monstermann/number": ["@monstermann/number@0.0.2", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0", "type-fest": "^5.0.0" } }, "sha512-8pmNuHPzzcVYRLq7IYuTGEoWGYz12CLNEitQCkKPn9KXS1l75PU2Fijt3P4ULvZPqY/Ru+nj37/5za9y13G6mQ=="],
 
@@ -290,25 +290,25 @@
 
     "@monstermann/set": ["@monstermann/set@0.1.1", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0", "@monstermann/remmi": "^0.0.0" } }, "sha512-ASP996MtYiTP4g7haXI9IpO62uvQYYy1/meV+N/QnMT04ky4WT2tY0M8B/1V2u/1hOB9GZ5PvFytWzdCfI6wgQ=="],
 
-    "@monstermann/signals": ["@monstermann/signals@0.2.0", "", { "dependencies": { "@monstermann/dll": "^0.0.2", "@monstermann/dsp": "^0.2.3", "@monstermann/meta": "^0.1.2" } }, "sha512-Djp6pwQc/JVpLRTdzywCLifnGXpgDpzh3xLhW3BtOnmbeHjbhQamaBuRuWlRBlwgkefbKrD/OOWuoLBML7WirA=="],
+    "@monstermann/signals": ["@monstermann/signals@0.2.1", "", { "dependencies": { "@monstermann/dll": "^0.0.2", "@monstermann/dsp": "^0.2.3", "@monstermann/meta": "^0.2.0" } }, "sha512-GXJKw6vZ9QlAwjlYt+IlXila1VJltnf5Fe+2Y9fPiKIb+KdNsWOs94hB6ZU5C8Teuc5/+gBg0SQ6XAsM+CmRGA=="],
 
     "@monstermann/signals-modal": ["@monstermann/signals-modal@workspace:packages/signals-modal"],
 
-    "@monstermann/signals-web": ["@monstermann/signals-web@0.2.3", "", { "dependencies": { "@monstermann/signals": "^0.2.0" } }, "sha512-Cv4TwhtzTH/KyfmSkgxQmAUMzGVAj+8YOWp2byhwoVfr2q2sdv0F5VlFUyeD5K9Mxf617v7m9Z4kgx54zFdguQ=="],
+    "@monstermann/signals-web": ["@monstermann/signals-web@0.2.4", "", { "dependencies": { "@monstermann/signals": "^0.2.1" } }, "sha512-9jSNu0keie7HsYYaNZDEZx/Jp/VEAmAgA3OXFjvlwh5uiUiyeyMDKz9O8L2n6wB3ZTnPE4UVuSjMFWb35pqcjw=="],
 
     "@monstermann/string": ["@monstermann/string@0.0.1", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0", "string-ts": "^2.2.1" } }, "sha512-69ODUgXPvdW1LuZO4dps/WvHba5n0Z82yNn5jmnkf00zh335vjrn4dA0zlAWHDcttyxuLz6uNG5W8qGsHkdPWg=="],
 
     "@monstermann/transform-match": ["@monstermann/transform-match@0.2.7", "", { "dependencies": { "@jridgewell/remapping": "^2.3.4", "@jridgewell/sourcemap-codec": "^1.5.4", "magic-string": "^0.30.17", "oxc-parser": "^0.101.0", "oxc-walker": "^0.6.0", "redent": "^4.0.0" } }, "sha512-KHRTAVRTNfiMhQZ7oR2mzPrWbb91ZUmE2OEP4iLwwCH57aNQ0XRd8sid8qgH8mqTs+vjZKIW2aAGYzEO9vy9ag=="],
 
-    "@monstermann/transform-meta": ["@monstermann/transform-meta@0.1.2", "", { "dependencies": { "@jridgewell/remapping": "^2.3.4", "@jridgewell/sourcemap-codec": "^1.5.4", "magic-string": "^0.30.17", "oxc-parser": "^0.101.0", "oxc-walker": "^0.6.0" } }, "sha512-3UiRwLChUhjNGnobLgf9K1VGxshP/Cr5+NELTc2z96sG6FJLqM717ss0uA4SbDOsoHO/ea9VECIVgCyDeS8ilw=="],
+    "@monstermann/transform-meta": ["@monstermann/transform-meta@0.2.0", "", { "dependencies": { "@jridgewell/remapping": "^2.3.4", "@jridgewell/sourcemap-codec": "^1.5.4", "magic-string": "^0.30.17", "oxc-parser": "^0.101.0", "oxc-walker": "^0.6.0" } }, "sha512-E2YGg2X8N7uiIRVfmoY7eP9aPatbe65xRSy3Db5uZmv/CDqAcFU+34+sn/h7FxUI7ukK1M7qXuIGqpqAktC86w=="],
 
     "@monstermann/tree-shake-import-namespaces": ["@monstermann/tree-shake-import-namespaces@0.2.2", "", { "dependencies": { "@jridgewell/remapping": "^2.3.4", "@jridgewell/sourcemap-codec": "^1.5.4", "astring": "^1.9.0", "magic-string": "^0.30.17", "oxc-parser": "^0.101.0", "oxc-walker": "^0.6.0", "picocolors": "^1.1.1" } }, "sha512-NBJp/l8fZYtTwwWfoIN4PCW/eQTF/jYEczUmdZt6z9yjPKoiQfZyLtgQZ/mFObU68bzKR9q+8XYphggPpCkojg=="],
 
     "@monstermann/tsconfig": ["@monstermann/tsconfig@0.0.0", "", {}, "sha512-DJfOlZ71AOBJWxPUUcy8SIkJLXOy1c9LP84o52I2JcpiODNOn7/c5P7Gqp7z6hPLLi9rgRCIzOEBrNOazZsYfQ=="],
 
-    "@monstermann/unplugin-fn": ["@monstermann/unplugin-fn@0.4.4", "", { "dependencies": { "@monstermann/transform-match": "^0.2.7", "@monstermann/tree-shake-import-namespaces": "^0.2.2", "unplugin": "^2.3.4", "unplugin-utils": "^0.3.0" } }, "sha512-bSm6r1RMbBvaQp/HK885CcIG8HiAHRsE8L3EmDz0F4cSnfsNFBuwoSUuOvzujvuiqmRD+DYMQY8ZHi0yxTw+EQ=="],
+    "@monstermann/unplugin-fn": ["@monstermann/unplugin-fn@0.4.6", "", { "dependencies": { "@monstermann/transform-match": "^0.2.7", "@monstermann/tree-shake-import-namespaces": "^0.2.2", "unplugin": "^2.3.4", "unplugin-utils": "^0.3.0" } }, "sha512-lxgtT42JG5Ug7GhBSS4GARLEyBScMgU0cLLVDeb+u48rgBpIgoFgNrBkzU3kuvW8hS34au1tnXCzLRuVCEq6Hg=="],
 
-    "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.2.0", "", { "dependencies": { "@monstermann/transform-meta": "^0.1.2", "unplugin": "^2.3.11", "unplugin-utils": "^0.3.1" } }, "sha512-wqy51fJvJrbFyiDGfNc4B/NQIuAOf07pGKMaPgjh+4oGDiStjT+C1zJmrZTCO8Q+1NPHETSasiWl/aJYqrm2qQ=="],
+    "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.2.1", "", { "dependencies": { "@monstermann/transform-meta": "^0.2.0", "unplugin": "^2.3.11", "unplugin-utils": "^0.3.1" } }, "sha512-ZHW1xchvyn/d1AivmpWyihGemW5vA0iBogb7Re9BYgkXiKWMtOHq1aSpMrN3M3pbpnMNA8ZdR371Wzd9r2/nPw=="],
 
     "@monstermann/vitepress-theme": ["@monstermann/vitepress-theme@0.2.0", "", {}, "sha512-/2iV2HTsgGFZffl15XvjaQF+N/2rRiLvW/xc3NtGAKU6g+Rnb9v7Era9OecD7xeu3CwD97vEc1eZrqR/auCB+A=="],
 
