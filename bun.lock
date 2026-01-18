@@ -20,12 +20,12 @@
       "version": "0.4.3",
       "dependencies": {
         "@monstermann/fn": "^0.4.7",
-        "@monstermann/signals": "^0.2.1",
+        "@monstermann/signals": "^0.2.2",
         "@monstermann/signals-web": "^0.2.4",
       },
       "devDependencies": {
         "@monstermann/unplugin-fn": "^0.4.7",
-        "@monstermann/unplugin-signals": "^0.2.1",
+        "@monstermann/unplugin-signals": "^0.2.2",
       },
     },
   },
@@ -290,7 +290,7 @@
 
     "@monstermann/set": ["@monstermann/set@0.2.0", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0", "@monstermann/remmi": "^0.0.0" } }, "sha512-ys2ytb7jsbxYsjQoW4SeSBQmUYjClo7GtdbJsHCqlv4bm8nd9U2BRXU9vZ7kJRnkORTKymH6aBTj2tFWuyq5Kw=="],
 
-    "@monstermann/signals": ["@monstermann/signals@0.2.1", "", { "dependencies": { "@monstermann/dll": "^0.0.2", "@monstermann/dsp": "^0.2.3", "@monstermann/meta": "^0.2.0" } }, "sha512-GXJKw6vZ9QlAwjlYt+IlXila1VJltnf5Fe+2Y9fPiKIb+KdNsWOs94hB6ZU5C8Teuc5/+gBg0SQ6XAsM+CmRGA=="],
+    "@monstermann/signals": ["@monstermann/signals@0.2.2", "", { "dependencies": { "@monstermann/dll": "^0.1.0", "@monstermann/dsp": "^0.3.0", "@monstermann/meta": "^0.2.0" } }, "sha512-RBXvAO4qfbDodhws9ZwSVKyv/Ltbr6r+GCQhA4gdzYskSZQyJaWUD/s7emiFTaaOV/2Azohss0WK3nb/uZSzRg=="],
 
     "@monstermann/signals-modal": ["@monstermann/signals-modal@workspace:packages/signals-modal"],
 
@@ -308,7 +308,7 @@
 
     "@monstermann/unplugin-fn": ["@monstermann/unplugin-fn@0.4.7", "", { "dependencies": { "@monstermann/transform-match": "^0.2.7", "@monstermann/tree-shake-import-namespaces": "^0.2.2", "unplugin": "^2.3.4", "unplugin-utils": "^0.3.0" } }, "sha512-XIU/+SsIK6UQ8fKPUO8VUaxcwnRAvSWQ8duzq28er6wLyK3/WSl76P82k/ojYd14CsPLH9SN4JywHKyRoyqPVw=="],
 
-    "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.2.1", "", { "dependencies": { "@monstermann/transform-meta": "^0.2.0", "unplugin": "^2.3.11", "unplugin-utils": "^0.3.1" } }, "sha512-ZHW1xchvyn/d1AivmpWyihGemW5vA0iBogb7Re9BYgkXiKWMtOHq1aSpMrN3M3pbpnMNA8ZdR371Wzd9r2/nPw=="],
+    "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.2.2", "", { "dependencies": { "@monstermann/transform-meta": "^0.2.0", "unplugin": "^2.3.11", "unplugin-utils": "^0.3.1" } }, "sha512-hfkoIHaP77kqWQNs79AfDOITpVk5ogrEZJAm40rRSYTCzCdJxoXQMG19r5wG7nQvjqDZBdgG3iB4smg+ps+wgw=="],
 
     "@monstermann/vitepress-theme": ["@monstermann/vitepress-theme@0.2.0", "", {}, "sha512-/2iV2HTsgGFZffl15XvjaQF+N/2rRiLvW/xc3NtGAKU6g+Rnb9v7Era9OecD7xeu3CwD97vEc1eZrqR/auCB+A=="],
 
@@ -1387,6 +1387,12 @@
     "@jridgewell/gen-mapping/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
 
     "@jridgewell/trace-mapping/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
+
+    "@monstermann/signals/@monstermann/dll": ["@monstermann/dll@0.1.0", "", {}, "sha512-rEwwuhyUuyx323H5FrnZDJqlh27weJEQmz+D85jmn8AvWTO3Gi1WmCAoJqvWj54eqbntex0jGnxZnwdPjvcRZA=="],
+
+    "@monstermann/signals/@monstermann/dsp": ["@monstermann/dsp@0.3.0", "", {}, "sha512-hAQUNsPDoN3M1eiEDDwAxHdv11UfInd4lnvjLDpbQA/9vIktZ/Or8ownsUB7jNZY+bmXQMX8qebcJhNhtO7Lug=="],
+
+    "@monstermann/signals-web/@monstermann/signals": ["@monstermann/signals@0.2.1", "", { "dependencies": { "@monstermann/dll": "^0.0.2", "@monstermann/dsp": "^0.2.3", "@monstermann/meta": "^0.2.0" } }, "sha512-GXJKw6vZ9QlAwjlYt+IlXila1VJltnf5Fe+2Y9fPiKIb+KdNsWOs94hB6ZU5C8Teuc5/+gBg0SQ6XAsM+CmRGA=="],
 
     "@oxc-parser/binding-wasm32-wasi/@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.0", "", { "dependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1", "@tybys/wasm-util": "^0.10.1" } }, "sha512-Fq6DJW+Bb5jaWE69/qOE0D1TUN9+6uWhCeZpdnSBk14pjLcCWR7Q8n49PTSPHazM37JqrsdpEthXy2xn6jWWiA=="],
 
