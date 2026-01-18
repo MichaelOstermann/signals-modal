@@ -1,4 +1,4 @@
-import fn from "@monstermann/unplugin-fn/rolldown"
+import geometry from "@monstermann/unplugin-geometry/rolldown"
 import signals from "@monstermann/unplugin-signals/rolldown"
 import { defineConfig } from "tsdown"
 
@@ -8,13 +8,8 @@ export default defineConfig({
     entry: ["./src/index.ts"],
     format: "esm",
     unbundle: true,
-    external: [
-        /@monstermann\/map/,
-        /@monstermann\/set/,
-        /@monstermann\/geometry/,
-    ],
     plugins: [
-        fn({}),
+        geometry({}),
         signals({
             getPath: path => path.replace("src", "@signals-modal"),
         }),

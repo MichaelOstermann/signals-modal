@@ -1,6 +1,5 @@
 import type { Signal } from "@monstermann/signals"
 import type { ModalStatus } from "./types"
-import { Set } from "@monstermann/fn"
 import { INTERNAL, signal } from "@monstermann/signals"
 import { onModalDisposed } from "../createModal"
 import { onModalClosed } from "./onModalClosed"
@@ -12,9 +11,23 @@ export const $keysToStatus = signal<Map<string, Signal<ModalStatus>>>(new Map(),
     silent: true,
 })
 
-export const $openedModals = signal<ReadonlySet<string>>(Set.create(), INTERNAL)
+export const $openedModals = signal<ReadonlySet<string>>(new Set(), INTERNAL)
 
-onModalOpening(key => $openedModals(m => Set.add(m, key)))
-onModalOpened(key => $openedModals(m => Set.add(m, key)))
-onModalClosed(key => $openedModals(m => Set.remove(m, key)))
-onModalDisposed(key => $openedModals(m => Set.remove(m, key)))
+onModalOpening(key => $openedModals(m => add(m, key)))
+onModalOpened(key => $openedModals(m => add(m, key)))
+onModalClosed(key => $openedModals(m => remove(m, key)))
+onModalDisposed(key => $openedModals(m => remove(m, key)))
+
+function add(set: ReadonlySet<string>, key: string): ReadonlySet<string> {
+    if (set.has(key)) return set
+    const clone = new Set(set)
+    clone.add(key)
+    return clone
+}
+
+function remove(set: ReadonlySet<string>, key: string): ReadonlySet<string> {
+    if (!set.has(key)) return set
+    const clone = new Set(set)
+    clone.delete(key)
+    return clone
+}

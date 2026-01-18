@@ -1,7 +1,7 @@
 import type { Memo } from "@monstermann/signals"
 import type { ModalPlacement } from "./withPlacement"
 import type { ModalPosition } from "./withPosition"
-import { Rect } from "@monstermann/fn"
+import { Rect } from "@monstermann/geometry"
 import { signal } from "@monstermann/signals"
 
 export const $positions = signal<Map<string, Memo<ModalPosition>>>(new Map(), {

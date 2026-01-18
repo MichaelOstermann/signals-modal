@@ -1,4 +1,4 @@
-import type { Rect } from "@monstermann/fn"
+import type { Rect } from "@monstermann/geometry"
 import type { Signal } from "@monstermann/signals"
 import { signal } from "@monstermann/signals"
 

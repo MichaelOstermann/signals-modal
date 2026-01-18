@@ -6,12 +6,12 @@ aside: true
 
 <Badge type="info" class="size">
     <span>Minified</span>
-    <span>29.46 KB</span>
+    <span>41.12 KB</span>
 </Badge>
 
 <Badge type="info" class="size">
     <span>Minzipped</span>
-    <span>6.34 KB</span>
+    <span>8.77 KB</span>
 </Badge>
 
 **Composable modal management.**
