@@ -21,7 +21,7 @@
       "dependencies": {
         "@monstermann/dfdl": "^0.1.0",
         "@monstermann/geometry": "^0.4.0",
-        "@monstermann/signals": "^0.2.2",
+        "@monstermann/signals": "^0.3.0",
         "@monstermann/signals-web": "^0.2.4",
       },
       "devDependencies": {
@@ -259,17 +259,17 @@
 
     "@monstermann/dfdl": ["@monstermann/dfdl@0.1.0", "", {}, "sha512-9/Z9x3C2aT7843JmoGk3lnsUdP73xSmK8kduh+xth/NjEUcc3yCJYoAoNlpyQkv6WVtmsc41hy/W77pNsb8L8Q=="],
 
-    "@monstermann/dll": ["@monstermann/dll@0.1.0", "", {}, "sha512-rEwwuhyUuyx323H5FrnZDJqlh27weJEQmz+D85jmn8AvWTO3Gi1WmCAoJqvWj54eqbntex0jGnxZnwdPjvcRZA=="],
+    "@monstermann/dll": ["@monstermann/dll@0.2.0", "", {}, "sha512-sNxk6ex/GfVbHCjQsXAEqlpcS/uo2bQsy2vRS7FBhb8Fs7D8wlwQM7Qo4bGt4moPTcWCwrBnbcfzb1LW6qM0aQ=="],
 
-    "@monstermann/dsp": ["@monstermann/dsp@0.3.0", "", {}, "sha512-hAQUNsPDoN3M1eiEDDwAxHdv11UfInd4lnvjLDpbQA/9vIktZ/Or8ownsUB7jNZY+bmXQMX8qebcJhNhtO7Lug=="],
+    "@monstermann/dsp": ["@monstermann/dsp@0.4.0", "", {}, "sha512-a7BVOXPx/unkYJL4rj9N5HevQ86RE1bnMG90q36hl0uqpByPLexDcFp0ArqnIm3oZO6srpv9Dv4YHIdWcO/4pQ=="],
 
     "@monstermann/eslint-config": ["@monstermann/eslint-config@0.6.0", "", { "dependencies": { "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0", "@eslint-react/eslint-plugin": "^2.3.13", "@stylistic/eslint-plugin": "^5.6.1", "@typescript-eslint/eslint-plugin": "^8.49.0", "@typescript-eslint/parser": "^8.49.0", "eslint": "^9.39.2", "eslint-plugin-antfu": "^3.1.1", "eslint-plugin-format": "^1.1.0", "eslint-plugin-import-x": "^4.16.1", "eslint-plugin-jsdoc": "^61.5.0", "eslint-plugin-jsonc": "^2.21.0", "eslint-plugin-n": "^17.23.1", "eslint-plugin-perfectionist": "^4.15.1", "eslint-plugin-react-compiler": "^19.1.0-rc.2", "eslint-plugin-react-hooks": "^7.0.1", "eslint-plugin-react-refresh": "^0.4.24", "eslint-plugin-regexp": "^2.10.0", "eslint-plugin-tailwindcss": "^4.0.0-beta.0", "eslint-plugin-unicorn": "^62.0.0", "eslint-plugin-unused-imports": "^4.3.0", "globals": "^16.5.0", "jsonc-eslint-parser": "^2.4.2", "prettier": "^3.7.4" } }, "sha512-pB1RK9lNFOWqf64UHNcueEPrL3gSLd0aX018m87i2Ov4XAMooOpeucbQVHqZgfcDEqQaBTptctq7D86SJsmQNg=="],
 
     "@monstermann/geometry": ["@monstermann/geometry@0.4.0", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0" } }, "sha512-baPFGvBEChcdUKPGlyX+yer6ef+DgdQV2CsUvf9ph/CcFpECvRrN7/J+Ziv98WSkyJRIepYMEbLjqX/rItDNhA=="],
 
-    "@monstermann/meta": ["@monstermann/meta@0.2.0", "", {}, "sha512-TR65nXC3wVz/78ySorX27mvtQtYw7Q4T3jUH1VJD+Qbmin1V/K3+0OrC9zgU1h+KvqNb/M04vzGJP16PHsMPfQ=="],
+    "@monstermann/meta": ["@monstermann/meta@0.3.0", "", {}, "sha512-wWcYfZxLtfL67QOUZg14cmSbVYF6RsrBcZI26it2hnRUrf2dCHuwvoMAa0JZfkiZrSG2WxexhnBaZroKicnnWw=="],
 
-    "@monstermann/signals": ["@monstermann/signals@0.2.2", "", { "dependencies": { "@monstermann/dll": "^0.1.0", "@monstermann/dsp": "^0.3.0", "@monstermann/meta": "^0.2.0" } }, "sha512-RBXvAO4qfbDodhws9ZwSVKyv/Ltbr6r+GCQhA4gdzYskSZQyJaWUD/s7emiFTaaOV/2Azohss0WK3nb/uZSzRg=="],
+    "@monstermann/signals": ["@monstermann/signals@0.3.0", "", { "dependencies": { "@monstermann/dll": "^0.2.0", "@monstermann/dsp": "^0.4.0", "@monstermann/meta": "^0.3.0" } }, "sha512-XowGJfRqxY0htmdwFUymm+o/ZWzrIm85ONLLCnzaX8E8oRbT2umU8F8oQeuxV76LGqUKcTN1rqysv2Qf8ecrDw=="],
 
     "@monstermann/signals-modal": ["@monstermann/signals-modal@workspace:packages/signals-modal"],
 
@@ -1546,6 +1546,8 @@
     "@monstermann/signals-web/@monstermann/signals/@monstermann/dll": ["@monstermann/dll@0.0.2", "", {}, "sha512-9CsW/KTouyNJnRzyORLc54bogLqRMfkdVLzLDWPlN+2PfBgxB/TT5RniZKb3IduelBMZk/HgDnViiLXQPFSHfA=="],
 
     "@monstermann/signals-web/@monstermann/signals/@monstermann/dsp": ["@monstermann/dsp@0.2.3", "", {}, "sha512-0Bs3d+pi9W3Z1hK0mBhsxsD7yPCN/brpXvjgkPR1pvMmb35sComUzt9JoEwO6ULhSVFYkULJuETTk47R7XEO8Q=="],
+
+    "@monstermann/signals-web/@monstermann/signals/@monstermann/meta": ["@monstermann/meta@0.2.0", "", {}, "sha512-TR65nXC3wVz/78ySorX27mvtQtYw7Q4T3jUH1VJD+Qbmin1V/K3+0OrC9zgU1h+KvqNb/M04vzGJP16PHsMPfQ=="],
 
     "@typescript-eslint/typescript-estree/minimatch/brace-expansion": ["brace-expansion@2.0.1", "", { "dependencies": { "balanced-match": "^1.0.0" } }, "sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA=="],
 
