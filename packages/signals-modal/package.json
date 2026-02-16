@@ -38,7 +38,7 @@
         "@monstermann/signals-web": "^0.2.4"
     },
     "devDependencies": {
-        "@monstermann/unplugin-geometry": "^0.3.0",
+        "@monstermann/unplugin-geometry": "^0.4.0",
         "@monstermann/unplugin-signals": "^0.2.2"
     }
 }
