@@ -35,7 +35,7 @@
         "@monstermann/dfdl": "^0.1.0",
         "@monstermann/geometry": "^0.4.0",
         "@monstermann/signals": "^0.3.0",
-        "@monstermann/signals-web": "^0.2.4"
+        "@monstermann/signals-web": "^0.3.0"
     },
     "devDependencies": {
         "@monstermann/unplugin-geometry": "^0.4.0",
