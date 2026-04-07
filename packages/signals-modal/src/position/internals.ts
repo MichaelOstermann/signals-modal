@@ -1,18 +1,4 @@
-import type { Memo } from "@monstermann/signals"
-import type { ModalPlacement } from "./withPlacement"
-import type { ModalPosition } from "./withPosition"
 import { Rect } from "@monstermann/geometry"
-import { signal } from "@monstermann/signals"
-
-export const $positions = signal<Map<string, Memo<ModalPosition>>>(new Map(), {
-    mutable: true,
-    silent: true,
-})
-
-export const $placements = signal<Map<string, Memo<ModalPlacement>>>(new Map(), {
-    mutable: true,
-    silent: true,
-})
 
 export function getBoundaryUp(boundary: Rect, anchor: Rect): Rect {
     return Rect.setBottom(boundary, Rect.top(anchor))

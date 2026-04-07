@@ -4,7 +4,6 @@ import { Rect } from "@monstermann/geometry"
 import { effect, INTERNAL, memo, peek, signal } from "@monstermann/signals"
 import { $mouseX, $mouseY } from "@monstermann/signals-web"
 import { currentModal } from "../createModal"
-import { $anchorMeasurements } from "./internals"
 
 /**
  * # withMouseAnchor
@@ -67,15 +66,6 @@ export function withMouseAnchor(options: {
             })
         }
     }, INTERNAL))
-
-    $anchorMeasurements(map => map.set(modal.key, $rect))
-
-    modal.onDispose(() => {
-        $anchorMeasurements((map) => {
-            map.delete(modal.key)
-            return map
-        })
-    })
 
     return $measurement
 }

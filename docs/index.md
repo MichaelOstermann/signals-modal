@@ -60,21 +60,6 @@ const modal = createModal("key", () => {
         $status,
     };
 });
-
-const anchor = document.querySelector(".anchor");
-const floating = document.querySelector(".popover");
-
-// Directly access the returned properties:
-modal.$anchor(anchor);
-modal.$floating(floating);
-modal.$status("opened");
-const { floatingX, floatingY, maxHeight, maxWidth } = modal.$position();
-
-// Or use the global utilities:
-setAnchorElement("key", anchor);
-setFloatingElement("key", floating);
-setModalStatus("key", "opened");
-const { floatingX, floatingY, maxHeight, maxWidth } = getModalPosition("key");
 ```
 
 ## Installation

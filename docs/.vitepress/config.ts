@@ -47,23 +47,15 @@ export default defineConfig({
                 { link: "withAnchorElement", text: "withAnchorElement" },
                 { link: "withAnchorMeasurement", text: "withAnchorMeasurement" },
                 { link: "withMouseAnchor", text: "withMouseAnchor" },
-                { link: "setAnchorElement", text: "setAnchorElement" },
-                { link: "getAnchorElement", text: "getAnchorElement" },
-                { link: "getAnchorMeasurement", text: "getAnchorMeasurement" },
             ] },
             { base: "/Floating/", text: "Floating", items: [
                 { link: "withFloatingElement", text: "withFloatingElement" },
                 { link: "withFloatingMeasurement", text: "withFloatingMeasurement" },
-                { link: "setFloatingElement", text: "setFloatingElement" },
-                { link: "getFloatingElement", text: "getFloatingElement" },
-                { link: "getFloatingMeasurement", text: "getFloatingMeasurement" },
             ] },
             { base: "/Position/", text: "Position", items: [
                 { link: "withBoundary", text: "withBoundary" },
                 { link: "withPlacement", text: "withPlacement" },
                 { link: "withPosition", text: "withPosition" },
-                { link: "getModalPlacement", text: "getModalPlacement" },
-                { link: "getModalPosition", text: "getModalPosition" },
             ] },
             { base: "/Scroll/", text: "Scroll", items: [
                 { link: "withCloseOnScroll", text: "withCloseOnScroll" },
@@ -71,7 +63,6 @@ export default defineConfig({
             { base: "/Status/", text: "Status", items: [
                 { link: "withModalStatus", text: "withModalStatus" },
                 { link: "closeAllModals", text: "closeAllModals" },
-                { link: "closeLastModal", text: "closeLastModal" },
                 { link: "closeModal", text: "closeModal" },
                 { link: "createModal", text: "createModal" },
                 { link: "getClosedModals", text: "getClosedModals" },
@@ -99,11 +90,6 @@ export default defineConfig({
                 { link: "onModalOpening", text: "onModalOpening" },
                 { link: "openModal", text: "openModal" },
                 { link: "setModalStatus", text: "setModalStatus" },
-            ] },
-            { base: "/Utils/", text: "Utils", items: [
-                { link: "closeLastModalOnClickOutside", text: "closeLastModalOnClickOutside" },
-                { link: "closeLastModalOnEsc", text: "closeLastModalOnEsc" },
-                { link: "syncModalGroupsToBody", text: "syncModalGroupsToBody" },
             ] },
         ],
         socialLinks: [

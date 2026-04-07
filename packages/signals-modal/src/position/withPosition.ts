@@ -3,9 +3,8 @@ import type { ModalPlacement } from "./withPlacement"
 import { pipe } from "@monstermann/dfdl"
 import { Rect } from "@monstermann/geometry"
 import { INTERNAL, memo } from "@monstermann/signals"
-import { currentModal } from "../createModal"
 import { roundByDPR } from "../internals/roundByDPR"
-import { $positions, getBoundaryDown, getBoundaryLeft, getBoundaryRight, getBoundaryUp } from "./internals"
+import { getBoundaryDown, getBoundaryLeft, getBoundaryRight, getBoundaryUp } from "./internals"
 
 export interface ModalPosition {
     floatingX: number
@@ -355,8 +354,7 @@ export function withPosition(options: {
     $placement: () => ModalPlacement
     transform?: (rect: Rect) => Rect
 }): Memo<ModalPosition> {
-    const modal = currentModal()
-
+    // TODO static
     const $position = memo(() => {
         return positionResolvers[options.$placement()]({
             anchor: options.$anchorMeasurement(),
@@ -365,15 +363,6 @@ export function withPosition(options: {
             transform: options.transform ?? (r => r),
         })
     }, INTERNAL)
-
-    $positions(p => p.set(modal.key, $position))
-
-    modal.onDispose(() => {
-        $positions((p) => {
-            p.delete(modal.key)
-            return p
-        })
-    })
 
     return $position
 }

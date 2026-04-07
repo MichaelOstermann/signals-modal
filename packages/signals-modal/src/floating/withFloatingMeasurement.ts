@@ -4,7 +4,6 @@ import { Rect } from "@monstermann/geometry"
 import { effect, INTERNAL, memo, signal } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { observeDimensions } from "../internals/observeDimensions"
-import { $floatingMeasurements } from "./internals"
 
 /**
  * # withFloatingMeasurement
@@ -81,15 +80,6 @@ export function withFloatingMeasurement(options: {
             width: bounds.width,
         }))
     }, INTERNAL))
-
-    $floatingMeasurements(map => map.set(modal.key, $rect))
-
-    modal.onDispose(() => {
-        $floatingMeasurements((map) => {
-            map.delete(modal.key)
-            return map
-        })
-    })
 
     return $measurement
 }

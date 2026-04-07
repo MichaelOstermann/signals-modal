@@ -4,7 +4,6 @@ import { Rect } from "@monstermann/geometry"
 import { effect, INTERNAL, memo, signal } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { observePosition } from "../internals/observePosition"
-import { $anchorMeasurements } from "./internals"
 
 /**
  * # withAnchorMeasurement
@@ -72,15 +71,6 @@ export function withAnchorMeasurement(options: {
         $rect(Rect.fromElement(element))
         return observePosition(element, bounds => $rect(Rect.fromDOMRect(bounds)))
     }, INTERNAL))
-
-    $anchorMeasurements(map => map.set(modal.key, $rect))
-
-    modal.onDispose(() => {
-        $anchorMeasurements((map) => {
-            map.delete(modal.key)
-            return map
-        })
-    })
 
     return $measurement
 }

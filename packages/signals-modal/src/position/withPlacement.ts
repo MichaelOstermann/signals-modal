@@ -1,8 +1,7 @@
 import type { Memo } from "@monstermann/signals"
 import { Rect } from "@monstermann/geometry"
 import { INTERNAL, memo } from "@monstermann/signals"
-import { currentModal } from "../createModal"
-import { $placements, getBoundaryDown, getBoundaryLeft, getBoundaryRight, getBoundaryUp } from "./internals"
+import { getBoundaryDown, getBoundaryLeft, getBoundaryRight, getBoundaryUp } from "./internals"
 
 export type ModalPlacementOption =
     | "vertical-center"
@@ -168,8 +167,7 @@ export function withPlacement(options: {
     $boundary: () => Rect
     $floatingMeasurement: () => Rect
 }): Memo<ModalPlacement> {
-    const modal = currentModal()
-
+    // TODO static
     const $placement = memo(() => {
         return placementResolvers[options.placement]({
             anchor: options.$anchorMeasurement(),
@@ -177,15 +175,6 @@ export function withPlacement(options: {
             floating: options.$floatingMeasurement(),
         })
     }, INTERNAL)
-
-    $placements(p => p.set(modal.key, $placement))
-
-    modal.onDispose(() => {
-        $placements((p) => {
-            p.delete(modal.key)
-            return p
-        })
-    })
 
     return $placement
 }
