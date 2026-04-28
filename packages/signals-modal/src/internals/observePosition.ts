@@ -60,9 +60,17 @@ export function observePosition(
         io.observe(element)
     }
 
+    const ro = new ResizeObserver(() => refresh())
+    ro.observe(element)
+
+    const fullCleanup = () => {
+        cleanup()
+        ro.disconnect()
+    }
+
     refresh(true)
 
-    return cleanup
+    return fullCleanup
 }
 
 function rectsEqual(a: DOMRect, b: DOMRect): boolean {
