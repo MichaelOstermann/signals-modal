@@ -25,7 +25,7 @@
         "@monstermann/signals-web": "^0.3.0",
       },
       "devDependencies": {
-        "@monstermann/unplugin-geometry": "^0.4.0",
+        "@monstermann/unplugin-geometry": "^0.5.0",
         "@monstermann/unplugin-signals": "^0.3.0",
       },
     },
@@ -279,7 +279,7 @@
 
     "@monstermann/tsconfig": ["@monstermann/tsconfig@0.0.0", "", {}, "sha512-DJfOlZ71AOBJWxPUUcy8SIkJLXOy1c9LP84o52I2JcpiODNOn7/c5P7Gqp7z6hPLLi9rgRCIzOEBrNOazZsYfQ=="],
 
-    "@monstermann/unplugin-geometry": ["@monstermann/unplugin-geometry@0.4.0", "", { "dependencies": { "@monstermann/tree-shake-import-namespaces": "^0.4.0", "unplugin": "^3.0.0", "unplugin-utils": "^0.3.0" } }, "sha512-2f1l33ZKd1zrfM6ttvvP+uiDy+R7NqCXF0aV0q/rFfPVjvq9XMkCiHvm4JdO77d/HFHvDBxazy816N8x0FV+Jw=="],
+    "@monstermann/unplugin-geometry": ["@monstermann/unplugin-geometry@0.5.0", "", { "dependencies": { "@monstermann/tree-shake-import-namespaces": "^0.4.0", "unplugin": "^3.0.0", "unplugin-utils": "^0.3.0" } }, "sha512-t9q3oanfAy9yK3OWPmp66Loq2/Rv6fXhEMTYsu0WrGgG4caQgpEhV8F0WOlV4KvsP2XPF7ATXVaslZ7m8nQhrA=="],
 
     "@monstermann/unplugin-signals": ["@monstermann/unplugin-signals@0.3.0", "", { "dependencies": { "@monstermann/transform-meta": "^0.3.0", "unplugin": "^3.0.0", "unplugin-utils": "^0.3.1" } }, "sha512-x94HbWPinRSW7mt1maJAGNNJ8p2MYdET2icJXLsCq7ucM6xqCoH8mnylpZB2i1s7ZqfKfWtK40duiUpfxf45sQ=="],
 
