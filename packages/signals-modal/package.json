@@ -33,7 +33,7 @@
     },
     "dependencies": {
         "@monstermann/dfdl": "^0.2.0",
-        "@monstermann/geometry": "^0.4.0",
+        "@monstermann/geometry": "^0.5.0",
         "@monstermann/signals": "^0.3.0",
         "@monstermann/signals-web": "^0.3.0"
     },

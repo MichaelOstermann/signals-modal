@@ -20,7 +20,7 @@
       "version": "0.7.1",
       "dependencies": {
         "@monstermann/dfdl": "^0.2.0",
-        "@monstermann/geometry": "^0.4.0",
+        "@monstermann/geometry": "^0.5.0",
         "@monstermann/signals": "^0.3.0",
         "@monstermann/signals-web": "^0.3.0",
       },
@@ -263,7 +263,7 @@
 
     "@monstermann/eslint-config": ["@monstermann/eslint-config@0.7.0", "", { "dependencies": { "@eslint-community/eslint-plugin-eslint-comments": "^4.7.1", "@eslint-react/eslint-plugin": "^4.2.3", "@stylistic/eslint-plugin": "^5.10.0", "@typescript-eslint/eslint-plugin": "^8.59.0", "@typescript-eslint/parser": "^8.59.0", "eslint": "^10.2.1", "eslint-plugin-antfu": "^3.2.2", "eslint-plugin-better-tailwindcss": "^4.4.1", "eslint-plugin-format": "^2.0.1", "eslint-plugin-import-x": "^4.16.2", "eslint-plugin-jsdoc": "^62.9.0", "eslint-plugin-jsonc": "^3.1.2", "eslint-plugin-n": "^17.24.0", "eslint-plugin-perfectionist": "^5.9.0", "eslint-plugin-react-compiler": "^19.1.0-rc.2", "eslint-plugin-react-hooks": "^7.1.1", "eslint-plugin-react-refresh": "^0.5.2", "eslint-plugin-regexp": "^3.1.0", "eslint-plugin-unicorn": "^64.0.0", "eslint-plugin-unused-imports": "^4.4.1", "globals": "^17.0.0", "jsonc-eslint-parser": "^3.1.0", "prettier": "^3.8.3" } }, "sha512-J097/7H7CqwNto1zSGbsWoGQ0MNf1xf2QOS1GAQPnBbObHyMUeOAQhARSFHCvjukja8ybauy/PSQuTfxvG5QmA=="],
 
-    "@monstermann/geometry": ["@monstermann/geometry@0.4.0", "", { "dependencies": { "@monstermann/dfdl": "^0.1.0" } }, "sha512-baPFGvBEChcdUKPGlyX+yer6ef+DgdQV2CsUvf9ph/CcFpECvRrN7/J+Ziv98WSkyJRIepYMEbLjqX/rItDNhA=="],
+    "@monstermann/geometry": ["@monstermann/geometry@0.5.0", "", { "dependencies": { "@monstermann/dfdl": "^0.2.0" } }, "sha512-WTAYyMd7ZAHoEZINq42Aa6Jt97aNIJ+jsqd1c2FN8pJ4ZAawdX3vMg9YitgKaEMfzX5yZSRtVJlVB3HKcXMmYQ=="],
 
     "@monstermann/meta": ["@monstermann/meta@0.3.0", "", {}, "sha512-wWcYfZxLtfL67QOUZg14cmSbVYF6RsrBcZI26it2hnRUrf2dCHuwvoMAa0JZfkiZrSG2WxexhnBaZroKicnnWw=="],
 
@@ -1384,8 +1384,6 @@
     "@jridgewell/gen-mapping/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
 
     "@jridgewell/trace-mapping/@jridgewell/sourcemap-codec": ["@jridgewell/sourcemap-codec@1.5.0", "", {}, "sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ=="],
-
-    "@monstermann/geometry/@monstermann/dfdl": ["@monstermann/dfdl@0.1.0", "", {}, "sha512-9/Z9x3C2aT7843JmoGk3lnsUdP73xSmK8kduh+xth/NjEUcc3yCJYoAoNlpyQkv6WVtmsc41hy/W77pNsb8L8Q=="],
 
     "@oxc-parser/binding-wasm32-wasi/@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.0", "", { "dependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1", "@tybys/wasm-util": "^0.10.1" } }, "sha512-Fq6DJW+Bb5jaWE69/qOE0D1TUN9+6uWhCeZpdnSBk14pjLcCWR7Q8n49PTSPHazM37JqrsdpEthXy2xn6jWWiA=="],
 
