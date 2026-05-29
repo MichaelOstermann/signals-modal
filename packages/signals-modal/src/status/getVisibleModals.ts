@@ -36,7 +36,6 @@ import { $keysToStatus } from "./internals"
  * ```
  *
  */
-// TODO
 export function getVisibleModals(): string[] {
     const result: string[] = []
     const map = $keysToStatus()

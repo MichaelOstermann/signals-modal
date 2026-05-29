@@ -1608,10 +1608,12 @@ setModalStatus("key", "opened");
 
 ```ts
 function withModalStatus(status: ModalStatus = "closed"): {
-    $status: Signal<ModalStatus>;
     $isOpen: Memo<boolean>;
+    $mounted: Memo<boolean>;
+    $status: Signal<ModalStatus>;
     close: () => void;
     open: () => void;
+    toggle: () => void;
 };
 ```
 

@@ -4,7 +4,6 @@ import { INTERNAL, memo, signal, watch } from "@monstermann/signals"
 import { currentModal } from "../createModal"
 import { closeModal } from "./closeModal"
 import { $keysToStatus } from "./internals"
-import { isModalOpen } from "./isModalOpen"
 import { onModalClosed } from "./onModalClosed"
 import { onModalClosing } from "./onModalClosing"
 import { onModalOpened } from "./onModalOpened"
@@ -16,10 +15,12 @@ import { openModal } from "./openModal"
  *
  * ```ts
  * function withModalStatus(status: ModalStatus = "closed"): {
- *     $status: Signal<ModalStatus>;
  *     $isOpen: Memo<boolean>;
+ *     $mounted: Memo<boolean>;
+ *     $status: Signal<ModalStatus>;
  *     close: () => void;
  *     open: () => void;
+ *     toggle: () => void;
  * };
  * ```
  *
@@ -53,9 +54,11 @@ import { openModal } from "./openModal"
  */
 export function withModalStatus(status: ModalStatus = "closed"): {
     $isOpen: Memo<boolean>
+    $mounted: Memo<boolean>
     $status: Signal<ModalStatus>
     close: () => void
     open: () => void
+    toggle: () => void
 } {
     const modal = currentModal()
     const $status = signal<ModalStatus>(status, INTERNAL)
@@ -73,10 +76,21 @@ export function withModalStatus(status: ModalStatus = "closed"): {
         else if (status === "opened") onModalOpened(modal.key)
     }, INTERNAL))
 
+    const $isOpen = memo(() => {
+        const s = $status()
+        return s === "opening"
+            || s === "opened"
+    })
+
     return {
-        $isOpen: memo(() => isModalOpen(modal.key)),
+        $isOpen,
+        $mounted: memo(() => $status() !== "closed"),
         $status,
         close: () => closeModal(modal.key),
         open: () => openModal(modal.key),
+        toggle: () => {
+            if ($isOpen()) closeModal(modal.key)
+            else openModal(modal.key)
+        },
     }
 }

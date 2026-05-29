@@ -17,31 +17,3 @@ export const modalGroups = {
  * A record containing common modal groups.
  *
  */
-/**
- * # modalGroups
- *
- * ```ts
- * const modalGroups = {
- *     dialog: "dialog",
- *     popover: "popover",
- *     tooltip: "tooltip",
- * };
- * ```
- *
- * A record containing common modal groups.
- *
- */
-/**
- * # modalGroups
- *
- * ```ts
- * const modalGroups = {
- *     dialog: "dialog",
- *     popover: "popover",
- *     tooltip: "tooltip",
- * };
- * ```
- *
- * A record containing common modal groups.
- *
- */
