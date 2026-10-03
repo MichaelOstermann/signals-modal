@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is no longer maintained. `@monstermann/signals-modal` moved into the [`signals`](https://github.com/MichaelOstermann/signals) repository.
+
 <div align="center">
 
 <h1>signals-modal</h1>
